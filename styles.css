@@ -13,12 +13,14 @@ body{
     margin-right: 25%;
     width: 50%;
     background-color: #a8fffb;
+    border-radius: 10px;
 }
 
 #myprogressBar {
-    width: 2%;
+    width: 0%;
     height: 20px;
     background-color: #d60000;
+    border-radius: 10px;
 }
 
 h3 { 
@@ -96,6 +98,21 @@ button:after {
     z-index: -1;
 }
 
+button:disabled:after{
+    background-clip: padding-box;
+    background-color:#d60000;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
 button:main,
 button:focus {
     user-select: auto;
@@ -104,5 +121,9 @@ button:focus {
 button:hover:not(:disabled) {
     filter: brightness(1.1);
     -webkit-filter: brightness(1.1);
+}
+
+button:disabled{
+    background-color: #ff4411;
 }
 
