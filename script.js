@@ -2,11 +2,15 @@ var current_money = 0;
 var click_money = 1;
 var buy_one_time = 1000;
 var current_workers = 0;
+var identity;
 
 function Buy_one(){
 
+    
+
     if (current_workers < 1 & current_money >= 10){
-        buy_one_timed()
+        buy_one_timed();
+        clearInterval(identity)
         timer = setInterval(buy_one_timed, buy_one_time);
         document.getElementById("myprogressBar").style.backgroundColor = "#7CFC00"
     }
@@ -23,10 +27,10 @@ function Buy_one(){
         
         var element = document.getElementById("myprogressBar");
         var width = 1;
-        var identity = setInterval(scene, 10);
+        var buy_one_interval = setInterval(scene, 10);
         function scene() {
         if (width >= 100) {
-            clearInterval(identity);
+            clearInterval(buy_one_interval);
             current_money += current_workers;
             update_money();
         } else {
@@ -51,7 +55,7 @@ function update() {
     
     var element = document.getElementById("myprogressBar");
     var width = 1;
-    var identity = setInterval(scene, 10);
+    identity = setInterval(scene, 10);
     function scene() {
     if (width >= 100) {
         clearInterval(identity);
