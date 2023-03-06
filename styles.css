@@ -1,0 +1,108 @@
+body{
+    background-image: url("background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#Progress_Status {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: #a8fffb;
+}
+
+#myprogressBar {
+    width: 2%;
+    height: 20px;
+    background-color: #d60000;
+}
+
+h3 { 
+    padding-top: 10%;
+    color: #ff4411; 
+    font-size: 48px; 
+    font-family: 'Signika', 
+    sans-serif; 
+    padding-bottom: 10px;
+    text-shadow: 2px 2px #d68b00; 
+}
+
+p {
+    color: #b8f5d6; 
+    font-size: 27px; 
+    font-family: 'Signika', 
+    sans-serif; 
+    padding-bottom: 3px; 
+    text-shadow: 2px 2px #48004e;
+}
+
+footer{
+    padding-top: 10%;
+    color: #ffffff; 
+    font-size: 15px; 
+    font-family: 'Signika', 
+    sans-serif; 
+    padding-bottom: 3px; 
+    text-shadow: 2px 2px #48004e;
+}
+
+button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 200;
+}
+
+button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+button:main,
+button:focus {
+    user-select: auto;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
