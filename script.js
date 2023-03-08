@@ -1,5 +1,8 @@
+$('#game-stuff').hide();
+
 $(window).on('load', function () {
-    $('#loading').fadeOut(1000);
+    $('#loading').delay(1000).fadeOut(1000);
+    $('#game-stuff').delay(1000).fadeIn(1000);
   }) 
 
 // WORKERS
