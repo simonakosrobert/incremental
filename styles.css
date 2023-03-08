@@ -24,10 +24,14 @@
     }
 }
 
-body{
+#game-stuff{
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+body{
+    
     background-image: url("background.jpg");
     height: 100%;
     background-position: center;
