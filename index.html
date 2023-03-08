@@ -15,12 +15,35 @@
             <div id="myprogressBar"></div>
         </div>
         
+        <!-- WORKERS -->
         <br>
         <button id="click_button" onclick="update()">CLICK!</button> 
 
-        <button onclick="Buy_one()">Buy 1 for 10$</button>
+        <button id="worker_buy_button" onclick="Buy_one()">Buy 1 for 10$</button>
+
+        <button id="worker_speed_button" onclick="Buy_speed()">2X SPEED (1000$)!</button>
 
         <p id="current_workers_id">Current workers: 0</p>
+
+
+        <!-- CAMPS -->
+        <div id="Progress_Status">
+            <div id="Camp_progress_bar"></div>
+        </div>
+
+        <br>
+        <button id="camp_click_button" onclick="click_camp()">CLICK!</button> 
+
+        <button id="camp_buy_button" onclick="Buy_one_camp()">Buy 1 for 1000$</button>
+
+        <button id="camp_speed_button" onclick="Buy_camp_speed()">2X SPEED (10000$)!</button>
+
+
+
+        <p id="current_camps_id">Current camps: 0</p>
+
+
+
 
         <footer>Simon Ákos Róbert @ 2023</footer>
 
