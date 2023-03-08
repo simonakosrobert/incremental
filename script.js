@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+    $('#loading').hide();
+  }) 
+
 // WORKERS
 var current_money = 0;
 var click_money = 1;
