@@ -35,7 +35,16 @@ body{
     height: 25px;
 }
 
-#myprogressBar {
+#worker_progress_bar {
+    width: 0%;
+    height: 20px;
+    background-color: #d60000;
+    border-radius: 10px;
+    height: 25px;
+    font-family: din-round,sans-serif;
+}
+
+#Camp_progress_bar {
     width: 0%;
     height: 20px;
     background-color: #d60000;
@@ -43,7 +52,7 @@ body{
     height: 25px;
 }
 
-#Camp_progress_bar {
+#resource_progress_bar {
     width: 0%;
     height: 20px;
     background-color: #d60000;
