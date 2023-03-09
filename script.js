@@ -15,6 +15,7 @@ var worker_price = 10;
 var worker_multiplier = 1.1;
 var worker_timer;
 var worker_element;
+var worker_click_timer;
 
 function buy_one_timed(){
     
@@ -32,8 +33,7 @@ function buy_one_timed(){
             worker_element.style.width = width + '%';
         }else {
             worker_element.style.width = '100%';
-            worker_element.innerHTML = `<font size="5">${1000/buy_one_time}/s</font>`;
-            
+            worker_element.innerHTML = `<font size="5">${1000/buy_one_time}/s</font>`;         
         }
         
     }    
