@@ -6,7 +6,7 @@ $(window).on('load', function () {
   }) 
 
 //#region WORKERS
-var current_money = 10000000;
+var current_money = 0;
 var click_money = 1;
 var buy_one_time = 1000;
 var current_workers = 0;
